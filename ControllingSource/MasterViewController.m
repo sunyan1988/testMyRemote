@@ -19,6 +19,7 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+    
 }
 
 - (void)viewDidLoad
@@ -29,6 +30,9 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    self.view.backgroundColor = [UIColor orangeColor];
+    
 }
 
 - (void)didReceiveMemoryWarning
